@@ -69,11 +69,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -kies uit zwart, rood óf blauw-
+**Je startniveau:** Blauwe piste. Ik werk niet vaak met html/css/js, en vind het vaak moeilijk te begrijpen zonder hulp. 
 
-**Je focus:** -kies uit responsive óf surface plane-
+**Je focus:** Voor nu kies ik voor volledig responsive omdat ik hier eerder tegen aan ben gelopen en hier graag verder mee wil oefenen. 
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**Je opdracht:** https://paperandboo.com/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 

@@ -1,5 +1,107 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.outer-box {
+	display: grid;
+	grid-auto-columns: min-content;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.nav-bar {
+	padding: 1rem;
+}
+
+.nav-bar > img {
+	width: 15rem;
+}
+
+section {
+	margin: 1rem;
+}
+
+section > h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-family: 'Lato', sans-serif;
+	line-height: 2rem;
+	white-space: nowrap;
+}
+
+section > h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+section > a {
+	flex-direction: row;
+}
+
+.text-white {
+	color: white;
+}
+
+.text-black {
+	color: black;
+}
+
+.section-button {
+	margin: auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	word-wrap: break-word;
+	font-size: 1rem;
+	color: white;
+	padding: .5rem;
+	border: solid 1px lightgrey;
+}
+
+/* Sections */
+#duurzame-badkamer {
+	height: 80vh;
+	background-image: url("./../images/roze-duurzaam.jpg");
+	background-size: cover;
+}
+
+#verzorging {
+	height: 40vh;
+	background-image: url("./../images/tandenborstel.jpg");
+	background-size: cover;
+}
+
+#bad-en-douche {
+	height: 40vh;
+	background-image: url("./../images/zeepbars.jpg");
+	background-size: cover;
+}
+
+/* Buttons */
+#shop-nu {
+	background-color: #c7e5d9;
+}
+
+#bekijk-producten1 {
+	background-color: #efdbd8;
+}
+
+#bekijk-producten2 {
+	background-color: #c7e5d9;
+}

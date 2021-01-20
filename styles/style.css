@@ -16,7 +16,7 @@ body {
 	display: grid;
 	grid-auto-columns: min-content;
 	flex-direction: column;
-	flex-wrap: nowrap;
+	/*		flex-wrap: nowrap;*/
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -40,7 +40,6 @@ section > h1 {
 	letter-spacing: 0.05em;
 	font-family: 'Lato', sans-serif;
 	line-height: 2rem;
-	white-space: nowrap;
 }
 
 section > h2 {
@@ -48,6 +47,30 @@ section > h2 {
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	white-space: nowrap;
+}
+
+section > h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+section > h4 {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+section > p {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.75rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 1.4rem;
+	width: 90vw;
+
 }
 
 section > a {
@@ -93,6 +116,14 @@ section > a {
 	background-size: cover;
 }
 
+#plastic-soep {
+	background-color: #efdbd8;
+}
+
+.section-image {
+	width: 100%;
+}
+
 /* Buttons */
 #shop-nu {
 	background-color: #c7e5d9;
@@ -104,4 +135,92 @@ section > a {
 
 #bekijk-producten2 {
 	background-color: #c7e5d9;
+	white-space: nowrap;
+}
+
+.grid {
+	display: grid;
+	width: 100%;
+	padding: 1rem;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	text-align: center;
+}
+
+.grid-item {
+	width: 100%;
+}
+
+.grid-item > img {
+	width: 100%;
+}
+
+.grid-item > a {
+	font-weight: normal;
+	font-family: 'Lato', sans-serif;
+	margin: 0.5rem 0 0.5rem 0;
+	font-size: 0.8rem;
+	color: black;
+	width: 100vw;
+	text-decoration: none;
+}
+
+.grid-item > h5 {
+	font-weight: normal;
+	font-family: 'Lato', sans-serif;
+	margin: 0.5rem 0 0.5rem 0;
+	text-align: center;
+	width: 100%;
+}
+
+.grid-item > button {
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	margin: auto;
+	text-transform: uppercase;
+	color: white;
+	padding: .5rem;
+	border: solid 1px lightgrey;
+	background-color: #c7e5d9;
+}
+
+/* Product pagina */
+
+.hoofd-product-foto {
+	width: 90vw;
+}
+
+.foto-grid {
+	display: flex;
+	padding: 1rem;
+	margin: 0 auto;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+.foto-grid .grid-item {
+	display: inline-block;
+}
+
+.foto-grid .grid-item img {
+	width: 100%;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+#op-voorraad {
+	color: darkgreen;
+}
+
+.in-winkelmand {
+	font-family: 'Lato', sans-serif;
+	margin: auto;
+	text-transform: uppercase;
+	color: white;
+	padding: .5rem;
+	border: solid 1px lightgrey;
+	background-color: #efdbd8;
 }

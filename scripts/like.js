@@ -1,5 +1,3 @@
-console.log("loaded.");
-
 const items = document.querySelectorAll(".heart");
 
 items.forEach(function (item, index) {

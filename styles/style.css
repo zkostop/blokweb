@@ -278,6 +278,7 @@ footer > h5 {
 
 .foto-grid .grid-item img {
 	width: 100%;
+	padding: 0.3rem;
 }
 
 .text-left {

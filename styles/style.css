@@ -10,24 +10,64 @@ body {
 	margin: 0;
 	height: 100%;
 	width: 100%;
+	font-family: 'Lato', sans-serif;
 }
 
 .outer-box {
 	display: grid;
 	grid-auto-columns: min-content;
 	flex-direction: column;
-	/*		flex-wrap: nowrap;*/
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 
+
+/* Navigatie bar */
+
 .nav-bar {
-	padding: 1rem;
+	z-index: 99;
+	padding: 1.5rem;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: white;
+	overflow: hidden;
+	text-align: center;
+	align-content: center;
 }
 
-.nav-bar > img {
-	width: 15rem;
+.nav-bar .nav-icon {
+	width: 1.5rem;
+}
+
+.nav-bar .left {
+	display: inline-block;
+	float: left;
+}
+
+.nav-bar .mid {
+	display: inline-block;
+	float: none;
+}
+
+.nav-bar .right {
+	display: inline-block;
+	float: right;
+}
+
+.nav-bar > div > a {
+	text-decoration: none;
+}
+
+.nav-bar > div > a > img {
+	width: 12rem;
+}
+
+/* Secties */
+
+main {
+	margin-top: 5rem;
 }
 
 section {
@@ -38,33 +78,28 @@ section > h1 {
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	font-family: 'Lato', sans-serif;
 	line-height: 2rem;
 }
 
 section > h2 {
-	font-family: 'Lato', sans-serif;
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	white-space: nowrap;
 }
 
 section > h3 {
-	font-family: 'Lato', sans-serif;
 	font-size: 1rem;
 	text-transform: uppercase;
 	white-space: nowrap;
 }
 
 section > h4 {
-	font-family: 'Lato', sans-serif;
 	font-size: 0.8rem;
 	text-transform: uppercase;
 	white-space: nowrap;
 }
 
 section > p {
-	font-family: 'Lato', sans-serif;
 	font-size: 0.75rem;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -75,6 +110,31 @@ section > p {
 
 section > a {
 	flex-direction: row;
+}
+
+/* Footer */
+
+footer {
+	padding: 1rem;
+	background-color: #efdbd8;
+	text-transform: uppercase;
+}
+
+footer .social {
+	width: 2rem;
+}
+
+footer > h4 {
+	margin-top: 2rem;
+	color: black;
+}
+
+footer > h5 {
+	margin-top: -1rem;
+	text-decoration: none;
+	color: black;
+	font-weight: 300;
+	line-height: 1.6rem;
 }
 
 .text-white {
@@ -89,7 +149,6 @@ section > a {
 	margin: auto;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: 'Lato', sans-serif;
 	word-wrap: break-word;
 	font-size: 1rem;
 	color: white;
@@ -152,6 +211,20 @@ section > a {
 	width: 100%;
 }
 
+.grid-item > .heart {
+	position: relative;
+	top: 0;
+	right: 0;
+	float: right;
+	width: 2rem;
+	margin-bottom: -2rem;
+
+}
+
+.grid-item > .heart .liked {
+	background-position: top right;
+}
+
 .grid-item > img {
 	width: 100%;
 }
@@ -212,15 +285,69 @@ section > a {
 }
 
 #op-voorraad {
+	text-transform: none;
 	color: darkgreen;
+	font-size: 1rem;
 }
 
 .in-winkelmand {
-	font-family: 'Lato', sans-serif;
 	margin: auto;
 	text-transform: uppercase;
 	color: white;
-	padding: .5rem;
+	font-size: 1rem;
+	padding: .5rem 1.5rem .5rem 1.5rem;
 	border: solid 1px lightgrey;
 	background-color: #efdbd8;
+	margin-left: .75rem;
+	height: 2.5rem;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	line-height: 1.8rem;
+	font-size: 0.8rem;
+	font-weight: 300;
+	color: grey;
+}
+
+#input-kwantiteit {
+	vertical-align: top;
+	width: 3rem;
+	height: 2.5rem;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	background-color: transparent;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	border-bottom: solid 1px lightgrey;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+.collapsible-content > h3,
+h4 {
+	color: grey;
+}
+
+.collapsible-content > p {
+	color: darkgrey;
+	font-size: .9rem;
+	line-height: 1.8rem;
 }

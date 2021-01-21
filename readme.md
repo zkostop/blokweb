@@ -3,9 +3,13 @@
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://commons.wikimedia.org/wiki/File:Eo_circle_teal_white_heart.svg
+2. https://www.w3schools.com/jsref/met_document_queryselectorall.asp
+3. https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+4. https://www.w3schools.com/howto/howto_css_fixed_menu.asp
+5. https://www.w3schools.com/howto/howto_js_collapsible.asp
+6. https://www.w3schools.com/tags/att_input_type_number.asp
+7. https://www.youtube.com/watch?v=br-0i3U1VCA&feature=youtu.be
 
 
 ## Intake (week 1)
@@ -157,6 +161,39 @@ Uitklap accordeon werkt goed, verbergt de informatie op een slimme manier.
 
 
 
+### Laatste versie
+
+Het uitwerken van de laatste elementen was best wel veel werk. Er ging vooral veel tijd in het precieze namaken van de website en de surface zo mooi mogelijk te maken. Dit ging wel ten koste van mijn tijd en proces. Ik ben hier vaak vast gelopen en heb het ook vaak even laten zitten. De microinteracties zijn gelukt en uiteindelijk is er toch een footer toegevoegd. Ik ben erg blij met het resultaat maar heb dit niet zonder hulp kunnen doen. Ik vond het een lastig proces en ben blij dat het klaar is. 
+
+**Screenshot(s):**
+
+<img src="images/proces-laatste1.png" width="375px" alt="omschrijving van de pagina">
+
+De navbar is goed gelukt en ziet er strak uit. De iconen lijken op de echte iconen.  
+
+<img src="images/proces-laatste2.png" width="375px" alt="omschrijving van de pagina">
+
+Grid is goed gelukt, alles staat er netjes in. De hartjes zijn toegevoegd. 
+
+<img src="images/proces-laatste3.png" width="375px" alt="omschrijving van de pagina">
+
+Tekstachtergrond is nu netjes ingeladen. 
+
+<img src="images/proces-laatste4.png" width="375px" alt="omschrijving van de pagina">
+
+Footer ziet er netjes uit. Komt overeen met de rest. Niet heel uitgebreid, maar prima.
+
+<img src="images/proces-laatste5.png" width="375px" alt="omschrijving van de pagina">
+
+Productpagina ziet er netjes uit, navbar weer aanwezig. Foto's werken alleen niet. 
+
+<img src="images/proces-laatste6.png" width="375px" alt="omschrijving van de pagina">
+
+Informatie toegevoegd, ziet er goed uit. 
+
+<img src="images/proces-laatste7.png" width="375px" alt="omschrijving van de pagina">
+
+Uitklap accordeon werkt goed, verbergt de informatie op een slimme manier. 
 
 
 

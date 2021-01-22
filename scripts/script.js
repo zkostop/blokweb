@@ -38,11 +38,13 @@ scrollToTop.addEventListener('click', function () {
 
 const inWinkelmand = document.getElementById('in-winkelmand');
 
-inWinkelmand.addEventListener('click', function () {
-	if (!inWinkelmand.classList.contains('colorAnimation')) {
-		inWinkelmand.classList.add('colorAnimation');
-		setInterval(function () {
-			inWinkelmand.classList.remove('colorAnimation');
-		}, 3000);
-	}
-})
+if (inWinkelmand !== null) {
+	inWinkelmand.addEventListener('click', function () {
+		if (!inWinkelmand.classList.contains('colorAnimation')) {
+			inWinkelmand.classList.add('colorAnimation');
+			setInterval(function () {
+				inWinkelmand.classList.remove('colorAnimation');
+			}, 3000);
+		}
+	})
+}

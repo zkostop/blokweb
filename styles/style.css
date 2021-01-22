@@ -13,6 +13,57 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+ul {
+	list-style-type: none;
+	list-style: none;
+}
+
+/*----------------------------------------------------------*/
+
+/* Navigatie bar 
+
+/*algehele navbar*/
+header > nav {
+	background-color: white !important;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+	transition: all .2s ease-in-out;
+}
+
+/*ul van de navbar*/
+header > nav > ul {
+	padding: 1rem;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+/*Betrekking tot alle images binnen de navbar*/
+header > nav > ul > li > a > img {
+	width: 1.5rem;
+}
+
+/*Links*/
+header > nav > ul > li:nth-of-type(0) {
+	float: left;
+}
+
+/*Midden (logo)*/
+header > nav > ul > li > img:nth-of-type(1) {
+	width: 12rem;
+}
+
+/*Rechts*/
+header > nav > ul > li:nth-of-type(2) {
+	float: right;
+}
+
+/*----------------------------------------------------------*/
+
+/* Secties */
+
 .outer-box {
 	display: grid;
 	grid-auto-columns: min-content;
@@ -22,50 +73,6 @@ body {
 	text-align: center;
 }
 
-
-/* Navigatie bar */
-
-.nav-bar {
-	z-index: 99;
-	padding: 1.5rem;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	background-color: white;
-	overflow: hidden;
-	text-align: center;
-	align-content: center;
-}
-
-.nav-bar .nav-icon {
-	width: 1.5rem;
-}
-
-.nav-bar .left {
-	display: inline-block;
-	float: left;
-}
-
-.nav-bar .mid {
-	display: inline-block;
-	float: none;
-}
-
-.nav-bar .right {
-	display: inline-block;
-	float: right;
-}
-
-.nav-bar > div > a {
-	text-decoration: none;
-}
-
-.nav-bar > div > a > img {
-	width: 12rem;
-}
-
-/* Secties */
-
 main {
 	margin-top: 5rem;
 }
@@ -74,43 +81,60 @@ section {
 	margin: 1rem;
 }
 
-section > h1 {
+section > article > h1 {
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	line-height: 2rem;
 }
 
-section > h2 {
-	font-size: 1.5rem;
+section > article > h2 {
+	font-size: 2rem;
 	text-transform: uppercase;
-	white-space: nowrap;
+	letter-spacing: 0.05em;
+	line-height: 2rem;
 }
 
-section > h3 {
-	font-size: 1rem;
-	text-transform: uppercase;
-	white-space: nowrap;
-}
-
-section > h4 {
-	font-size: 0.8rem;
-	text-transform: uppercase;
-	white-space: nowrap;
-}
-
-section > p {
+section > article > p {
 	font-size: 0.75rem;
 	font-weight: 300;
-	text-transform: uppercase;
 	line-height: 1.4rem;
-	width: 90vw;
+	width: 100%;
 
 }
 
-section > a {
+section > article > a {
 	flex-direction: row;
 }
+
+section > article > button {
+	margin: auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	word-wrap: break-word;
+	font-size: 1rem;
+	color: white;
+	padding: .5rem;
+	border: solid 1px lightgrey;
+
+	/*	animatie */
+	transition: all .2s ease-in-out;
+}
+
+section > article > button:hover {
+	transform: scale(1.1);
+}
+
+#probleem {
+	display: grid;
+	/*	grid-auto-columns: min-content;*/
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/*----------------------------------------------------------*/
 
 /* Footer */
 
@@ -124,14 +148,17 @@ footer .social {
 	width: 2rem;
 }
 
-footer > h4 {
+footer > p {
 	margin-top: 2rem;
 	color: black;
 }
 
-footer > h5 {
-	margin-top: -1rem;
-	text-decoration: none;
+footer > ul {
+	padding: 0;
+}
+
+footer > ul > li {
+	margin-top: 1rem;
 	color: black;
 	font-weight: 300;
 	line-height: 1.6rem;
@@ -145,37 +172,32 @@ footer > h5 {
 	color: black;
 }
 
-.section-button {
-	margin: auto;
-	text-decoration: none;
-	text-transform: uppercase;
-	word-wrap: break-word;
-	font-size: 1rem;
-	color: white;
-	padding: .5rem;
-	border: solid 1px lightgrey;
-}
+/*----------------------------------------------------------*/
 
 /* Sections */
+
+/*duurzame badkamer*/
 #duurzame-badkamer {
 	height: 80vh;
 	background-image: url("./../images/roze-duurzaam.jpg");
 	background-size: cover;
 }
 
+/*verzorging*/
 #verzorging {
 	height: 40vh;
 	background-image: url("./../images/tandenborstel.jpg");
 	background-size: cover;
 }
 
+/*bad en douche*/
 #bad-en-douche {
 	height: 40vh;
 	background-image: url("./../images/zeepbars.jpg");
 	background-size: cover;
 }
 
-#plastic-soep {
+section:nth-of-type(6) {
 	background-color: #efdbd8;
 }
 
@@ -258,6 +280,8 @@ footer > h5 {
 	background-color: #c7e5d9;
 }
 
+/*----------------------------------------------------------*/
+
 /* Product pagina */
 
 .hoofd-product-foto {
@@ -291,7 +315,7 @@ footer > h5 {
 	font-size: 1rem;
 }
 
-.in-winkelmand {
+#in-winkelmand {
 	margin: auto;
 	text-transform: uppercase;
 	color: white;
@@ -301,10 +325,7 @@ footer > h5 {
 	background-color: #efdbd8;
 	margin-left: .75rem;
 	height: 2.5rem;
-}
-
-ul {
-	list-style-type: none;
+	transition: all .2s ease;
 }
 
 li {
@@ -351,4 +372,59 @@ h4 {
 	color: darkgrey;
 	font-size: .9rem;
 	line-height: 1.8rem;
+}
+
+/* Go to top knop css en animatie */
+
+#go-to-top {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	padding: 1rem;
+	z-index: 999 !important;
+}
+
+#go-to-top > img {
+	width: 2.5rem;
+}
+
+.jumpIn {
+	animation: jumpIn .2s ease-in-out;
+}
+
+.invisible {
+	display: none;
+}
+
+@keyframes jumpIn {
+	0% {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0) !important;
+		opacity: 100;
+	}
+}
+
+.colorAnimation {
+	animation: colorAnimation 3s ease-in-out;
+}
+
+@keyframes colorAnimation {
+	0% {
+		background-color: #efdbd8;
+		color: white;
+	}
+
+	50% {
+		background-color: #c7e5d9;
+		color: black;
+	}
+
+	100% {
+		background-color: #efdbd8;
+		color: white;
+	}
 }
